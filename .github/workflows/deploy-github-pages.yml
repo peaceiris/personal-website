@@ -2,9 +2,10 @@ name: GitHub Pages
 
 on:
   push:
+    branches:
+      - master
   schedule:
-    # Every 1 day
-    - cron: '24 */24 * * *'
+    - cron: '24 */24 * * *'  # Once a day
 
 jobs:
   deploy:
